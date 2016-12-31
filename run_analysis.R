@@ -89,6 +89,7 @@ run_analysis<-function(){
     #Export data sets to CSV files
     write.csv(dfcSubset,"Subject_Activity_Mean_Std.csv",row.names = FALSE)
     write.csv(dfSummary,"Subject_Activity_Summary_Mean_Std.csv",row.names = FALSE)
+    write.table(dfSummary,"Subject_Activity_Summary_Mean_Std.txt",row.names = FALSE)
     
     
     #Extract variable names for use in data dictionary = Code Book
